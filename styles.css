@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+:root {
+  --transparency-value: 0.05;
+  /* Primary */
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+  /* Secondary */
+  --light-red-secondary: hsla(0, 100%, 67%, var(--transparency-value));
+  --orangey-yellow-secondary: hsla(39, 100%, 56%, var(--transparency-value));
+  --green-teal-secondary: hsla(166, 100%, 37%, var(--transparency-value));
+  --cobalt-blue-secondary: hsla(234, 85%, 45%, var(--transparency-value));
+  /* Gradients */
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+html, body {
+    height: 100%; /* Ensure full height */
+    margin: 0;
+    background-color: white;
+    font-family: 'Hanken Grotesk', sans-serif; /* Remove default margin */
+  }
+
+  .container {
+    display: flex;
+    justify-content: center; /* Corrected justify-items to justify-content */
+    align-items: center; /* Center vertically */
+    height: 100vh;
+    max-width: 600px;
+    margin-left: 350px;/* Space between boxes (instead of margin-left) */
+}
+
+.result {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: var(--white);
+    border-radius: 30px;
+    padding: 40px 50px;
+  
+    flex-direction: column;
+    flex-basis: 350px;
+    text-align: center;
+  }
+
+.result-container {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(
+      hsla(256, 72%, 46%, 1),
+      hsla(241, 72%, 46%, 0)
+    );
+   
+  
+    flex-direction: column;
+    gap: 0;
+    line-height: 1px;
+    margin-bottom: 20px;
+
+  }
+
+  .your-result {
+    margin-bottom: 78px;
+  }
+
+  .result-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    font-size: 50px;
+  }
+
+  
+
+.box2 {
+    background-color: white;
+     /* Optional, to match box1 */
+    width: 100%;
+    height: 550px;
+    box-shadow: 10px 10px lightblue;
+    box-shadow: 20px 20px 30px #00000011;
+    border-radius: 30px;
+}
+
+.left {
+    margin-left: 20px;
+}
+
+.para {
+    display: grid;
+}
+
+.together {
+    display: grid;
+    
+
+}
+
+.continue {
+    margin-left: 100px;
+}
+
+
+
+.reaction {
+    color: var(--light-red);
+    background-color: var(--light-red-secondary);
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .memory {
+    color: var(--orangey-yellow);
+    background-color: var(--orangey-yellow-secondary);
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+  }
+  
+  .verbal {
+    color: var(--green-teal);
+    background-color: var(--green-teal-secondary);
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+
+  }
+  
+  .visual {
+    color: var(--cobalt-blue);
+    background-color: var(--cobalt-blue-secondary);
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+
+  }
+
+.align {
+    margin-left: 10px;
+}
+
+.large {
+    font: weight 12px;
+}
+
+
+
+
+.big {
+    font-size: 30px;
+}
+
+.hundred h3{
+    margin-top: 50px;
+}
+
+.represent {
+    display: grid;
+}
+
+.div {
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .result {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .result-container {
+      height: 150px;
+      width: 150px;
+    }
+  
+    .box2 {
+      height: auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .result-score {
+      font-size: 40px;
+    }
+  
+    .result-container {
+      height: 120px;
+      width: 120px;
+    }
+  
+    .reaction, .memory, .verbal, .visual {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+
+
+
+
+
+
+
